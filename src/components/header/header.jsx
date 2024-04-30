@@ -45,24 +45,24 @@ function header(props) {
     ]);
 
 
-    const countryList = [];
-    useEffect(()=>{
-        getCountry('https://countriesnow.space/api/v0.1/countries/');
-    },[]);
+    // const countryList = [];
+    // useEffect(()=>{
+    //     getCountry('https://countriesnow.space/api/v0.1/countries/');
+    // },[]);
 
-    const getCountry = async(url)=>{
-        try{
-            await axios.get(url).then((res)=>{
-                if(res!==null){
-                    res.data.data.map((item,index)=>{
-                        countryList.push(item.country);
-                    })
-                }
-            })
-        }catch(error){
-            console.log(error.message);
-        }
-    }
+    // const getCountry = async(url)=>{
+    //     try{
+    //         await axios.get(url).then((res)=>{
+    //             if(res!==null){
+    //                 res.data.data.map((item,index)=>{
+    //                     countryList.push(item.country);
+    //                 })
+    //             }
+    //         })
+    //     }catch(error){
+    //         console.log(error.message);
+    //     }
+    // }
 
     const searchOpen=()=>{
         setOpenSearch(true);
