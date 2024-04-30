@@ -1,0 +1,65 @@
+@media only screen and (min-width:320px) and (max-width:575px){
+    .RightContent .topStrip{flex-direction: column;}
+    .RightContent .topStrip p{width: 100% !important;margin-bottom: 15px !important;}
+    .RightContent .topStrip div.ml-auto{width: 100% !important;}
+    .RightContent .topStrip div.ml-auto Button{font-size: 12px !important;padding: 5px !important;}
+
+    .Home_Product  .ProductRow .ProductItems{
+        width: 40% !important;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:654px){
+    .Home_Product  .ProductRow .ProductItems{
+        width: 100% !important;
+    }
+}
+@media only screen and (min-width:654px) and (max-width:768px){
+    .Home_Product  .ProductRow .ProductItems{
+        margin-left: 43px;
+        width: 40% !important;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .Home_Product .ProductRow{
+        width: 100vw;
+    }
+    .Home_Product  .ProductRow .ProductItems{
+        width: 40% !important;
+        margin-left: 45px;
+    }
+}
+@media (max-width:1463px){
+    .SideBarWrapper{
+        display: none !important;
+    }
+    .ListingPage{
+        padding-bottom: 0px !important;
+    }
+    .ProductRow{
+        padding-bottom: 0px !important;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1462px){
+    .Home_Product .ProductRow{
+        width: 100vw;
+    }
+    .Home_Product  .ProductRow .ProductItems{
+        min-width: 30% !important;
+        max-width: 40%;
+        margin-left: 20px !important;
+    }
+}
+@media (max-width:420px){
+    .RightContent .topStrip div.ml-auto Button span{
+        display: none;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:992px){
+    .ItemsHeader {
+        padding: 25px !important;
+    }
+    .ItemsHeader h1{
+        font-size: 35px !important;
+    }
+    .ListingData .RightContent{max-width: 100% !important; flex: 0 0 100% !important;}
+}

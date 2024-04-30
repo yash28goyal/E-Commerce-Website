@@ -1,0 +1,42 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+.homeslider{padding: 30px 0px;}
+.home_slider_Main{border-radius: 30px;overflow: hidden;position: relative;}
+
+.slick-arrow{position: absolute;top: 47%;width: 50px !important;height: 50px !important;border-radius: 50% !important;z-index: 1; background-color: #f2f3f4;transition: all 0.2s ease-in-out;box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);}
+.slick-arrow.slick-next{right: 2% !important;}
+.slick-arrow.slick-prev{left: 2% !important;}
+
+.slick-arrow.slick-prev::before{content: "\f104"!important; font-family: FontAwesome !important;font-size:30px;color:#000 !important;}
+.slick-arrow.slick-next::before{content: "\f105"!important; font-family: FontAwesome !important;font-size:30px;color:#000 !important;}
+
+.slick-arrow:hover{background-color: #3bb77e !important;}
+.slick-arrow:hover::before{color: #fff !important;}
+
+.home_slider_Main .slick-dots{position: absolute;bottom: 30px;}
+.home_slider_Main .slick-dots button::before{font-size: 18px !important;}
+.slick-active button::before{color:#3bb77e !important;}
+
+.homeslider .item{position: relative;}
+.homeslider .item .info{position: absolute;top: 15%;left: 6%;z-index: 100;}
+.homeslider .item .info h1{font-size: 5em;font-weight: bold;color: rgba(0, 0, 0, 0.8);line-height: 1;}
+.homeslider .item .info p{font-size: 30px;font-weight: 600;color: rgba(0, 0, 0, 0.4);}
+
+.dataDiv .ProductCard{
+    max-width: 100%;
+    min-width: 100%;
+}
+@media (max-width:1024px){
+    .bannerDiv{
+        display: none;
+    }
+    .dataDiv{
+        width: 100vw;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:992px){
+    .dataDiv .prodSliderItems .ppp{
+        min-width: 2000px !important;
+    }
+}

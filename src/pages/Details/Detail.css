@@ -1,0 +1,200 @@
+.breadcrumbWrapper{border-bottom: 1px solid #3bb77d33;width: 100%;height: auto;padding: 20px 0px;}
+.breadcrumb2{background: none !important;padding: 0px !important;}
+ul.breadcrumb {
+    list-style: none;
+    background-color: #eee;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #000;
+    text-decoration: none !important;
+  }
+  ul.breadcrumb li a:hover {
+    color: #3bb77e;
+    text-decoration: underline;
+  }
+ p,.text-light{color: #7e7e7e !important;}
+
+ .details_container{max-width: 90%;padding: 30px 0px;}
+ .productInfo{padding-left: 50px;}
+ .productInfo h1{font-size: 40px;font-weight: bold;opacity: 0.7;margin-bottom: 10px;}
+ .priceSec .pricelarge{font-size: 55px;font-weight: bold;}
+ .priceSec .text-o{font-size: 20px;font-weight: 600;}
+ .priceSec .text-light{font-size: 25px;font-weight: 600;text-decoration: line-through;}
+
+.productZoom{width: 100%;height: auto;border: 1px solid rgba(0,0,0,0.1);border-radius: 15px;overflow: hidden;padding: 0px;}
+
+
+.ZoomSlider{padding-top: 30px;}
+.ZoomSlider *{outline: none !important;cursor: pointer;}
+.ZoomSlider .slick-slide{padding-right: 10px !important;}
+.ZoomSlider .items{overflow: hidden;border-radius: 15px;border: 1px solid transparent;padding: 10px;}
+.ZoomSlider .slick-current .items{border: 1px solid #3bb77e !important;padding: 10px;}
+.ZoomSlider .slick-arrow{zoom: 70%;}
+.ZoomSlider .slick-arrow.slick-next{top: 55%;background-color: #06f983f8;}
+.ZoomSlider .slick-arrow.slick-prev{top: 58%;background-color: #06f983f8;}
+
+.productSize{width: 100%;height: auto;padding: 25px 0px;}
+.productSize ul li{margin-left: 15px !important;}
+.productSize ul li a{cursor: pointer;display: flex;align-items: center;justify-content: center;padding: 5px 10px!important;border: 1px solid rgba(0,0,0,0.1);border-radius: 5px;}
+.active{background: #3bb77e;}
+
+.addToCartSection{width: 100%;height: auto;}
+.addToCartSection .countersec{width: 100px;height: 50px;border-radius: 10px;border: 1px solid #3bb77e !important;
+overflow: hidden;padding: 10px;}
+.addToCartSection .countersec input{text-align:center;width: 60px;height: 100%;border: 0px ;outline: none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.addToCartSection .countersec {
+  position: relative;
+}
+.addToCartSection .countersec .arrow{
+  position: absolute;
+  cursor: pointer;
+}
+.arrow.plus{
+  top: 0px;
+  right: 10px;
+}
+.arrow.minus{
+  bottom: 0px;
+  right: 10px;
+}
+
+.btn-border{border: 1px solid rgba(0,0,0,0.2) !important;color: #3bb77e !important;background: #fff !important;}
+.btn-border:hover{border: 1px solid #3bb77e !important;background: #3bb77e !important;color: #fff !important;}
+.btn-l{width: 150px;height: 40px;font-size: 12px !important;}
+.addToCartSection{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.addToCartSection Button{height: 40px;margin-left: 20px;}
+
+
+
+/* *************************tabs */
+
+.card{border-radius: 10px !important;}
+
+.detailsPageTabs{border-radius: 25px !important;}
+.custom_tabs ul li{margin-right: 30px !important;}
+.custom_tabs ul li Button{padding: 10px 25px !important;border: 1px solid rgba(0,0,0,0.2) !important;font-size: 18px !important;text-transform: capitalize !important;border-radius: 30px !important;color: #000 !important;opacity: 0.7;}
+
+.Tabs_Content h2{font-size: 25px !important;font-weight: 600;}
+.Tabs_Content h3{font-size: 20px !important;font-weight: 500;}
+
+.image{width: 100px;}
+.reviewsCards{margin-top: 20px;transition: transform 0.3s ease-in-out;}
+.reviewsCards .rounded-circle{display: flex;align-items: center;justify-content: center;overflow: hidden;width: 100px;height: 100px;}
+.reviewsCards .rounded-circle img{width: 100%;height: 100%;object-fit: cover;}
+.reviewsCards:hover{transform: translateY(-5px);}
+
+.reviewForm h4{font-size: 20px;font-weight: 700;margin-bottom: 20px;}
+.reviewForm .form-group{margin-bottom: 20px;}
+.reviewForm .form-group textarea.form-control{height: 200px;font-size: 16px;padding-top: 15px;}
+.reviewForm .form-group .form-control{height: 60px;font-size: 16px;border-radius: 7px !important;padding-left: 15px;}
+.btn-lg{height: 50px !important;font-size: 16px !important;border-radius: 10px !important;}
+
+.ProgressBarBox{margin-bottom: 10px;}
+.progress-bar{background: #3bb77e;}
+.custom_tabs ul li Button.active{color: #3bb77e !important;}
+
+.related_product .item{
+  padding: 15px 5px;
+  padding-right: 25px !important;
+}
+.related_product h1{font-size: 30px;font-weight: 600;}
+
+
+@media only screen and (min-width:320px) and (max-width:1025px){
+  .row .productimg{
+    width: 100% !important;
+  }
+  .row .productimg .productZoom{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row .productInfo{
+    width: 100% !important;
+  }
+  .row .productInfo h1{font-size: 25px;}
+}
+
+@media only screen and (min-width:320px) and (max-width:769px){
+    .productInfo h1{
+      font-size: 20px !important;
+    }
+    .pricelarge{
+      font-size: 35px !important;
+    }
+    .text-light{
+      font-size: 18px !important;
+    }
+    .text-o{
+      font-size: 16px !important;
+    }
+    .productInfo p{
+      font-size: 14px !important;
+    }
+    .productSize span{
+      font-size: 14px !important;
+    }
+    .productSize ul li {
+      width: 40px !important;
+      font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:426px){
+  .breadcrumbWrapper ul li{
+    font-size: 12px !important;
+  }
+  .productZoom{
+    width: 100% !important;
+  }
+  .productSize span{
+    font-size: 14px !important;
+  }
+  .productSize ul li {
+    width: 40px !important;
+    padding-left: 0px !important;
+    font-size: 12px !important;
+  }
+  .addToCartSection{
+    grid-template-columns: 1fr !important;
+  }
+  .addToCartSection .countersec{margin-left: 18px !important;width: 150px !important;height: 45px !important;}
+  .countersec input{
+    width: 80% !important;
+    height: 100% !important;
+  }
+  .addToCartSection Button{
+    margin-top: 10px;
+    margin-right: 58px !important;
+  }
+  .detailsPageTabs ul li Button{
+    width: 150px !important;
+    font-size: 14px !important;
+  }
+  .detailsPageTabs li{
+    margin-top: 10px !important;
+  }
+  .detailsPageTabs li p{
+    font-size: 14px !important;
+  }
+  .detailsPageTabs .card p{
+    font-size: 10px !important;
+  }
+}

@@ -1,0 +1,26 @@
+.td .countersec{width: 100px;height: 50px;border-radius: 10px;border: 1px solid #3bb77e !important;
+    overflow: hidden;padding: 10px;}
+.td .countersec input{text-align:center;width: 60px;height: 100%;border: 0px ;outline: none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.td .countersec {
+  position: relative;
+}
+.td .countersec .arrow{
+  position: absolute;
+  cursor: pointer;
+}
+.arrow.plus{
+  top: 0px;
+  right: 10px;
+}
+.td svg{
+    color: #3bb77e;
+}
+.arrow.minus{
+  bottom: 0px;
+  right: 10px;
+}

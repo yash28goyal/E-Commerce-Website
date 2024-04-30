@@ -1,0 +1,76 @@
+.dgc,.dgc1{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dgcc{
+    padding: 35px;
+}
+.first h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.first h1{
+    margin-block: 10px;
+    font-size: 2.5rem ;
+    opacity: 0.8;
+    font-weight: 600;
+}
+.first p{
+    margin-block: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.second h2,.third h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3bb77e;
+    margin-bottom: 10px;
+}
+.second p,.third p{
+    margin-block: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.second,.third{
+    padding-top: 65px;
+}
+.g-map{
+    height: 40vh !important;
+}
+.g-map iframe{
+    width: 100%;
+    border-radius: 15px ;
+    height: 100%;
+}
+.dgc1{
+    margin-top: 25px;
+}
+.dgc1 div{
+    padding: 20px;
+}
+.dgc1 div h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.dgc1 div p{
+    margin-top: 10px ;
+    font-size: 1rem;
+}
+.dgc1 div Button span{
+    font-size: 0.75rem;
+}
+@media (max-width:1025px){
+    .dgc{
+        grid-template-columns: 1fr !important;
+    }
+    .second,.third{
+        padding-top: 10px !important;
+    }
+    .dgc1{
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+@media (max-width:656px){
+    .dgc1{
+        grid-template-columns: 1fr !important;
+    }
+}

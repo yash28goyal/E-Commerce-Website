@@ -1,0 +1,80 @@
+.border_grey{min-width: 270px;
+    max-width: 270px;padding: 15px;background-color: #f4f6fa;}
+.border_grey .img_banner{width: 30%;transition: transform 0.3s ease-in-out;}
+.border_grey .info_banner{width: 70%;padding: 10px;}
+
+.border_grey .info_banner h2{font-size: 18px !important; font-weight: 500 !important;}
+.border_grey .info_banner p{font-size: 16px !important;opacity: 0.6;}
+
+.border_grey:hover .img_banner{transform: translateY(-10px);}
+
+footer{padding: 30px 10px;}
+
+footer .part1 svg{color: #3bb77e;font-size: 20px !important;}
+footer .head{font-size: 19px !important;font-weight: 500;line-height: 1 !important;}
+footer .part1 p{line-height: 2;}
+
+footer .part2 h3{font-size: 25px;font-weight: 700;margin-top: 20px;}
+footer .part2 ul{margin-top: 20px;}
+footer .part2 ul li{margin-bottom: 10px;font-size: 17px;font-weight: 400 !important;transition: transform 0.3s ease-in-out;}
+footer .part2 ul li:hover{color: #3bb77e;transform: translateX(5px);}
+
+.InstallAppFooter h1{font-size: 25px; font-weight: 700;text-decoration: underline;}
+.InstallAppFooter p{line-height: 3;}
+.InstallAppFooter .Img_Install_App_Footer img{width: 10%;}
+
+.End_footer{padding-top: 10px;font-size: 14px;opacity: 0.8;}
+.End_footer .part-1 span{color: #3bb77e !important;}
+
+.End_footer .part-2 svg{font-size: 40px;opacity: 0.7;margin-right: 10px;}
+.End_footer .part-2 .info_call{padding: 5px;margin-right: 30px;}
+.End_footer .part-2 .div_info h2{font-size: 22px;font-weight: 700;color: #3bb77e;}
+.End_footer .part-2 .div_info p{font-size: 12px;}
+
+.End_footer .part-3{margin-left: auto;}
+.End_footer .part-3 p{font-size: 16px;font-weight: 700;line-height: 1;}
+.End_footer .part-3 p.title{font-size: 14px;font-weight: 500;opacity: 0.8;}
+.End_footer .part-3 ul{padding: 10px;display: flex;}
+.End_footer .part-3 ul li{color: #fff !important;width: 40px;height: 40px;background-color: #3bb77e;border-radius: 50%;display:flex;align-items: center;justify-content: center;}
+.dg3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img_news{
+    margin-top: 60px;
+    margin-right: 20px;
+}
+.info_news_para{text-align: left !important;}
+
+/*Responsive Footer*/
+
+@media (max-width:1025px){
+    .part1{
+        min-width: 100%;
+    }
+    .part2{
+        width: 100%;
+    }
+    .part2 .footer-item{
+        min-width: 20%;
+    }
+    .InstallAppFooter{
+        width: 100% !important;
+    }
+}
+@media (max-width:769px){
+    .InstallAppFooter .Img_Install_App_Footer img{min-width: 20%};   
+}
+@media (max-width:460px){
+    .part-2{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:1024px){
+    .dg3{
+        grid-template-columns: 1fr !important;
+    }
+    .part-3{
+        margin-left: 0px !important;
+    }
+}

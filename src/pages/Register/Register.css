@@ -1,0 +1,46 @@
+.registerTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register{
+    border-radius: 15px;
+    margin-top: 45px;
+    width: 40%;
+    padding:20px 50px;
+    border: 1px solid #3bb77e;
+}
+.register h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.register label{
+    font-weight: 500;
+    opacity: 0.8;
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+.register input{
+    border-radius: 5px !important;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #3bb77e !important;
+}
+.cont{
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+@media (max-width:1052px) {
+    .register{
+        width: 60% !important;
+    }
+}
+@media (max-width:512px) {
+    .register{
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,4 @@
+.newsLetterBanner{width: 600px;height: 60px;position: absolute;bottom: 22%;left: 8%;z-index: 10;}
+.newsLetterBanner input{width: 73%;height: 100%;border-radius: 500px;outline: none;font-size: 16px;padding-left:50px;padding-right: 21%;}
+.button_send{position: absolute;top: 23%;right: 93%;transform: rotate(-30deg);opacity: 0.5;}
+.subscribe_button{position: absolute;right: 20%;height: 100%;bottom: 5%;background-color: #3bb77e !important;width: 25% !important;border-radius: 500px !important;color: white !important;font-size: 16px !important;font-weight: 500;}

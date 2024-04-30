@@ -1,0 +1,14 @@
+.TopSection_box h3{font-weight: 500;font-size: 25px;position: relative;padding-bottom: 15px;margin-bottom: 20px;}
+
+.TopSection_box h3::after{content: '';width: 100%;height: 1px;background-color: #ccc;position: absolute;bottom: 0;left: 0;}
+.TopSection_box h3::before{content: '';width: 30%;height: 2px;background-color: #3bb77e;position: absolute;bottom: 0;left: 0;z-index: 2;}
+
+.TopSection_box .items_top{margin-top: 10px;transition: transform 0.3s ease-in-out;}
+.TopSection_box .items_top:hover{transform: translateY(-10px);}
+.TopSection_box .items_top .img_top{width: 30%;}
+.TopSection_box .items_top .info_top{width: 70%;padding: 10px;}
+.TopSection_box .items_top .info_top .info_top_title{font-weight: 700 !important;}
+.info_top_price{font-size: 20px;font-weight: bold;margin-right: 10px;}
+.info_top_old{font-size: 14px;font-weight: 400;text-decoration: line-through;}
+.rate{font-size: 16px !important;}
+

@@ -1,0 +1,32 @@
+.ProductCard{width: 100%;height: auto;border: 1px solid rgba(0, 0, 0, 0.1);overflow: hidden;border-radius: 15px;padding: 15px;}
+.ProductCard:hover{box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23)}
+
+.ProductCard .badge{position:absolute;top: 0px;left: 0px;border-radius: 0px !important;width: 20%;height: 8%;background-color: red;z-index: 2;color: #fff;padding: 10px;font-size: 12px;
+border-top-left-radius: 15px !important;border-bottom-right-radius: 15px !important;}
+
+.badge.Hot{background-color: #f74b81 !important;}
+.badge.Sale{background-color: #67bcee !important;}
+.badge.New{background-color: #3bb77e !important;}
+.badge.Best{background-color: #f59758 !important;}
+
+.img-Wrapper{display: flex;justify-content: center;text-align: center;}
+.img-Wrapper img{width: 70%;}
+/* .ProductCard:hover .img-Wrapper img{transform: scale(1.1);background-image: url('https://nest-nextjs-13.vercel.app/assets/imgs/shop/product-1-2.jpg');} */
+
+.img-Wrapper .overlay{width: 100%;height: 100%;z-index: 1;padding: 25px;display: flex;align-items: center;justify-content: center;position: absolute;top: 0;left: 0;}
+.overlay ul{border:1px solid #3bb77e;background: #fff;width: 140px;height: auto;border-radius: 10px; display: none;box-shadow:0px 0px 15px rgba(0, 0, 0, 0.16),3px 6px 15px rgba(0, 0, 0, 0.23);transition: all 0.3s ease-in-out;}
+.overlay ul li{color: #3bb77e;margin-right: 0 !important;}
+.overlay ul li.ab{border-right:1px solid #3bb77e;}
+.overlay ul li a{display: block;padding: 10px;}
+.overlay ul li a:hover svg{color: #000;opacity: 0.5;}
+.img-Wrapper:hover ul{display: block;}
+.tooltip{background: #3bb77e;}
+
+.Category_name{color: #000;opacity: 0.5;font-size: 14px;}
+.title{margin: 10px 0px;}
+.title a{color: #000;font-weight: 600;font-size: 20px;text-decoration: none;line-height: 22px;}
+.brand a{color: rgba(0, 0, 0, 0.6);color: #3bb77e;text-decoration: none;}
+.price{color: #3bb77e;font-weight: bold;font-size: 18px;margin-right: 10px;}
+.old_price{font-size: 14px;opacity: 0.6;color: #000;text-decoration: line-through;margin-right: 5px;}
+.ProductCard Button{font-size: 16px !important;color: #3bb77e !important;padding: 5px 20px !important;background: #def9ec !important;}
+.ProductCard Button:hover{background-color: #3bb77e !important;color: #fff !important;}

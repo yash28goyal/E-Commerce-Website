@@ -1,0 +1,131 @@
+@media only screen and (min-width:320px) and (max-width:992px){ /*767*/
+  header .headpart1 {max-width: 100%; flex: 0 0 100%;}
+  header .headpart1 .navToggle{width: 50px;}
+  header .headpart1 .navToggle svg{font-size: 30px !important;color: #000; opacity: 0.7;}
+  .nav .part2,.nav .part3{display: none !important;}
+  header .headpart3{display: none !important;}  
+}
+@media only screen and (min-width:320px) and (max-width:992px){
+  .homeslider .item .info h1{
+    font-size: 35px !important;
+  }
+  .homeslider .item .info p{
+    font-size: 15px !important;
+  }
+  .slick-arrow{
+    zoom: 80%;
+  }
+  .res-hide{
+    display: none !important;
+  }
+  .countryWrapper{width: 100%;z-index: 0 !important;}
+  .countryWrapper .selectDropDown{width: 250px;}
+  .nav .container-fluid{z-index: 0 !important;}
+  .headersearch{opacity: 0;padding-top: 50px !important;position: fixed;top: 0px;right: -100%;z-index: 100;transition: right 0.3s ease-in-out;background: #fff;width: 100%;height: 100vh !important;align-items: flex-start !important;flex-direction: column !important;}
+  .headersearch.open{opacity: 1;right: 0px;}
+  .headersearch .selectDrop{width: 100% !important;}
+  .headersearch .selectDrop .selectDropDown{width: 100% !important;left: 0.2px;}
+  .headersearch .search{width: 100% !important;border: 1px solid rgba(0, 0, 0, 0.3);border-radius: 10px;margin-top: 15px;}
+  .headersearch .search svg{margin-right: 15px;}
+  .closeSearch{position: absolute;top: 15px;left:15px;z-index: inherit;cursor: pointer;width: 40px;height: 40px;}
+  .closeSearch svg{font-size: 35px;}
+  .closeSearchT{position: absolute;top: 15px;left:15px;z-index: inherit;cursor: pointer;width: 40px;height: 40px;}
+  .closeSearchT svg{font-size: 35px;}
+  .taskMenu{
+    opacity: 0;padding-top: 50px !important;position: fixed;top: 0px;right: -100%;z-index: 100;transition: right 0.3s ease-in-out;background: #fff;width: 100%;height: 100vh !important;align-items: flex-start !important;flex-direction: column !important;justify-content: center;
+  }
+  .taskMenu.openT{opacity: 1;right: 0px;}
+  ul.task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul.task li Button a{
+    text-decoration: none;
+    color: #3bb77e;
+    font-size: 20px;
+    font-weight: 600; 
+  }
+
+
+  .Home_ProductsTitleWrap{
+    flex-direction: column;
+
+  }
+  .Home_ProductsTitleWrap h2{
+    width: 100%;
+  }
+
+  .Home_Product .Ul-Items{
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+    display: block !important;
+  }
+  .Home_Product .Ul-Items li{
+    margin-left: 0px !important;
+    margin-right: 10px !important;
+    display: inline-block !important;
+    vertical-align: top;
+    width: max-content;
+  }
+
+  .Home_Product .ProductRow{
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+    display: block !important;
+    margin-top: 15px !important;
+  }
+  .Home_Product .ProductRow .productitem{margin-right: 15px !important;width: 300px !important;vertical-align: top !important;display: inline-block !important;}
+  .Home_Product .ProductRow .productitem *{white-space: normal !important;}
+
+
+  .Home_Product_Row2 .slick-track{
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+    display: block !important;
+    margin-top: 15px !important;
+  }
+  .Home_Product_Row2 .slick-track .slick-slide{margin-right: 15px !important;width: 300px !important;vertical-align: top !important;display: inline-block !important;}
+  .Home_Product_Row2 .slick-track .slick-slide *{white-space: normal !important;}
+  .Home_Product_Row2 .slick-track{
+    white-space: nowrap;
+  }
+
+}
+@media (max-width:1025px){
+  .nav .part3,.nav .part1{display: none !important;}
+  .headerIcons{
+    display: none !important;
+  }
+}
+@media only screen and (min-width:320px) and (max-width:1025px){
+  .homeslider .item .info h1{
+    font-size: 55px !important;
+  }
+  .homeslider .item .info p{
+    font-size: 20px !important;
+  }
+
+}
+@media only screen and (min-width:320px) and (max-width:495px){
+  .homeslider .item .info h1{
+    font-size: 25px !important;
+  }
+  .homeslider .item .info p{
+    font-size: 10px !important;
+  }
+
+}
+@media only screen and (min-width:320px) and (max-width:376px){
+  .homeslider .item .info h1{
+    font-size: 18px !important;
+  }
+  .homeslider .item .info p{
+    font-size: 8px !important;
+  }
+
+}
