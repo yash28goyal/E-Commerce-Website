@@ -25,6 +25,10 @@ const Cart = (props) => {
         }
     }
     const [Cost,setTotalCost] = useState(0);
+
+
+    const [flag,setFlag] = useState(0);
+ 
   return (
     <>
         <div className="breadcrumbWrapper mt-1">
@@ -45,7 +49,7 @@ const Cart = (props) => {
                                 <div className="Hd mb-0">Your Cart</div>
                                 <p className='font-bold'>There are <span className="text-g">3</span> products in your cart</p>
                             </div>
-                            <span className='clearcart ml-auto text-g cursor'><DeleteIcon className='mb-1'/>Clear Cart</span>
+                            <span className='clearcart ml-auto text-g cursor' onClick={()=>{setFlag(1)}}><DeleteIcon className='mb-1'/>Clear Cart</span>
                         </div>
                         <div className="cartWrapper mt-4">
                             <div className="table-responsive">
@@ -65,7 +69,7 @@ const Cart = (props) => {
                                                 console.log(item.price);
                                                 item.price.replace()
                                                 return(
-                                                    <tr key={index}>
+                                                    <tr key={index} className={flag && "d-none"}>
                                                         <td>
                                                             <div className="d-flex align-items-center">
                                                                 <div className="imgg">
@@ -81,8 +85,8 @@ const Cart = (props) => {
                                                         <td>
                                                             <Quantity value={inputValue} plus={plus} minus={minus}/>
                                                         </td>
-                                                        <td><span className='text-g'>Rs {item.price*inputValue}</span></td>
-                                                        <td><span className="cursor"><DeleteIcon className='mb-1'/></span></td>
+                                                        <td><span className='text-g'>Rs {parseInt(item.price.replace(/,/g, ''))*inputValue}</span></td>
+                                                        <td><span className="cursor" ><DeleteIcon className='mb-1'/></span></td>
                                                     </tr>
                                                 )
                                             })

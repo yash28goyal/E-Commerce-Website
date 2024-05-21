@@ -13,7 +13,12 @@ import IconUser from '../../assets/images/icon-user.svg'
 
 const Nav = (props)=>{
 
+  // console.log(props.data)
     const [navData,setNavData] = useState([]);
+    const [user,setUser] = useState(localStorage.getItem("name"))
+    useEffect(()=>{
+        setUser(localStorage.getItem("name"));
+    },[user])
 
     // console.log(navData)
     useEffect(()=>{
@@ -27,7 +32,9 @@ const Nav = (props)=>{
               <li className="list-inline-item ml-3"><span className='d-flex gap-2'><img src={IconCompare}/>Compare</span></li>
               <li className="list-inline-item ml-3"><span className='d-flex gap-2'><img src={IconHeart}/>Wishlist</span></li>
               <Link to={'/cart'}><li className="list-inline-item ml-3"><span className='d-flex gap-2'><img src={IconCart}/>Cart</span></li></Link>
-             <Link to='/login'><li className="list-inline-item ml-3"><span className='d-flex gap-2'><img src={IconUser}/>Account</span></li></Link>
+             <Link to='/login'><li className="list-inline-item ml-3"><span className='d-flex gap-2'><img src={IconUser}/>
+             {user?user:"Account"}
+             </span></li></Link>
           </ul>
             <div className="col-sm-2 part1 d-flex align-items-center">
               <Button className="bg-g text-white tabs res-hide">

@@ -19,14 +19,13 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Nav from '../Navigation/Nav';
 
 function header(props) {
-
     const [isOpenDropDown,SetOpenDropDown] = useState(false);
     const [windowWidth,setWindowWidth] = useState(window.innerWidth);
     const [openSearch,setOpenSearch] = useState(false);
     const [openSearchT,setOpenSearchT] = useState(false);
-
+    
     const searchInput = useRef()
-
+    
     const [Categories,setCategories] = useState([
         'Milks and Dairies',
         'Wines and Drinks',
@@ -45,24 +44,24 @@ function header(props) {
     ]);
 
 
-    // const countryList = [];
-    // useEffect(()=>{
-    //     getCountry('https://countriesnow.space/api/v0.1/countries/');
-    // },[]);
+    const countryList = [];
+    useEffect(()=>{
+        getCountry('https://countriesnow.space/api/v0.1/countries/');
+    },[]);
 
-    // const getCountry = async(url)=>{
-    //     try{
-    //         await axios.get(url).then((res)=>{
-    //             if(res!==null){
-    //                 res.data.data.map((item,index)=>{
-    //                     countryList.push(item.country);
-    //                 })
-    //             }
-    //         })
-    //     }catch(error){
-    //         console.log(error.message);
-    //     }
-    // }
+    const getCountry = async(url)=>{
+        try{
+            await axios.get(url).then((res)=>{
+                if(res!==null){
+                    res.data.data.map((item,index)=>{
+                        countryList.push(item.country);
+                    })
+                }
+            })
+        }catch(error){
+            console.log(error.message);
+        }
+    }
 
     const searchOpen=()=>{
         setOpenSearch(true);
@@ -160,7 +159,7 @@ function header(props) {
                                 <span onClick={()=>{SetOpenDropDown(!isOpenDropDown)}}>
                                     <img src={IconUser}/>
                                     Account
-                                </span>
+                                </span> 
                             </li>
                             </Link>
                         </ul>
